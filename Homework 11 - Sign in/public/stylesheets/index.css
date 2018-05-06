@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+form {
+    margin: auto;
+    height: auto;
+    position: relative;
+}
+
+[name="login"] {
+    width: 310px;
+}
+
+[name="regist"] {
+    width: 350px;
+}
+
+[name="details"] {
+    width: 300px;
+}
+
+[name="login"] fieldset, [name="details"] fieldset  {
+    height: 280px;
+}
+
+[name="regist"] fieldset {
+    height: 560px;
+}
+
+div {
+    position: relative;
+    margin: 10px 3px;
+    padding-top: 7px;
+    height: auto;
+}
+
+.tips {
+    font-size: 13px;
+    color: rgb(152, 134, 0);
+    padding-left: 108px;
+    margin-top: 5px;
+}
+
+.details span {
+    position: absolute;
+    left: 90px;
+}
+
+input, img {
+    position: absolute;
+}
+
+input {
+    border: 1px solid dimgray;
+    border-radius: 5px;
+}
+
+.input input {
+    top: 5px;
+    right: 20px;
+    width: 180px;
+    height: 25px;
+}
+
+.input img {
+    margin-left: 2px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+}
+
+.messages {
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 64px;
+    height: 25px;
+    color: red;
+}
+
+.button input {
+    width: 80px;
+    height: 30px;
+    background-color: forestgreen;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+[value="登录"] {
+    left: 65px;
+}
+
+[value="注册"] {
+    right: 25px;
+}
+
+[value="提交"] {
+    right: 20px;
+}
+
+[value="重置"] {
+    left: 120px;
+}
+
+[value="注销"] {
+    left: 95px;
+}
+
+.button input:hover {
+    background-color: rgb(79,202,108);
+}
+
+.button input:active {
+    background-color: forestgreen;
+}
+
+#result {
+    top: 30px;
+    padding-left: 0px;
+    text-align: center;
+}

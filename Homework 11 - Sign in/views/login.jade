@@ -1,0 +1,25 @@
+doctype html
+html
+    head
+        title LogIn
+        meta(charset='utf-8')
+        link(rel='stylesheet', href='./stylesheets/index.css')
+        script(src='./javascripts/jquery.js')
+        script(src='./javascripts/index.js')
+        script(src='./javascripts/login.js')
+    body
+        form(name='login')
+            fieldset
+                legend 用户登录
+                .input 用户名
+                    img
+                    input(type='text', name='username')
+                    .messages 
+                .input 密码
+                    img
+                    input(type='password', name='password')
+                    .messages 
+                .button
+                    input(type='submit', name='login', value='登录')
+                    input(type='button', name='regist', value='注册')
+                #result.messages

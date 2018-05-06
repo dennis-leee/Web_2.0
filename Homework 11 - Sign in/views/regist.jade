@@ -1,0 +1,41 @@
+doctype html
+html
+    head
+        title Regist
+        meta(charset='utf-8')
+        link(rel='stylesheet', href='./stylesheets/index.css')
+        script(src='./javascripts/jquery.js')
+        script(src='./javascripts/index.js')
+        script(src='./javascripts/regist.js')
+    body
+        form(name='regist')
+            fieldset
+                legend 用户注册
+                .input 用户名
+                    img
+                    input(type='text', name='username')
+                    p.tips ※6~18位英文字母、数字或下划线，必须以英文字母开头
+                .input 密码
+                    img
+                    input(type='password', name='password')
+                    p.tips ※6~12位数字、大小写字母、中划线、下划线
+                .input 重复密码
+                    img
+                    input(type='password', name='repeatPassword')
+                    p.tips ※再次输入密码
+                .input 学号
+                    img
+                    input(type='text', name='studentID')
+                    p.tips ※8位数字，不能以0开头
+                .input 电话
+                    img
+                    input(type='text', name='phone')
+                    p.tips ※11位数字，不能以0开头
+                .input 邮箱
+                    img
+                    input(type='text', name='email')
+                    p.tips ※不能含有数字
+                .button
+                    input(type='reset', value='重置')
+                    input(type='submit', value='提交')
+                #result.messages

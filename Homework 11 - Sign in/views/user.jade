@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        title #{name}
+        link(rel='stylesheet', href='/stylesheets/index.css')
+        script(src='./javascripts/jquery.js')
+        script(src='/javascripts/user.js')
+    body
+        form(name='details')
+            fieldset 
+                legend 用户详情
+                .details 用户名: 
+                    span #{name}
+                .details 学号: 
+                    span #{studentID}
+                .details 电话: 
+                    span #{phone}
+                .details 邮箱: 
+                    span #{email}
+                .button
+                    input(type='button', value='注销', name='logout')
+                #result.messages #{messages}

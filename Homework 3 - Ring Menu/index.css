@@ -1,0 +1,227 @@
+/*字体*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+/*按钮的相关处理*/
+#button {
+    position: absolute;
+    bottom: 10%;
+    right: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width:35px;
+    height: 35px;
+}
+
+.apb {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
+.info, .button {
+    position: absolute;
+    bottom: 35%;
+    right: 35%;
+}
+
+.info, .button, .icon, .unread {
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+/*button中的细节处理*/
+.button {
+    background-repeat: no-repeat;
+    background-position: center;
+    -moz-background-size: 50%;
+    background-size: 50%;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.mask {
+    background-image: url(images/nomask.png);
+}
+
+.history {
+    background-image: url(images/history.png);
+}
+
+.message {
+    background-image: url(images/message.png);
+}
+
+.setting {
+    background-image: url(images/setting.png);
+}
+
+.sign {
+    background-image: url(images/signin.png);
+}
+
+/*未读信息部分的相关设置*/
+.unread {
+    font-family: "Arial Black", sans-serif;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    position: absolute;
+    right: -27%;
+    bottom: 55%;
+    color: white;
+}
+
+/*info中的细节处理*/
+.info {
+    overflow: hidden;
+    font-weight: bold;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+/*图片与数字的间距*/
+.info span {
+    margin-left: 7px;
+}
+
+.page {
+    position: absolute;
+    color: white;
+}
+
+.mine {
+    position: absolute;
+    color: rgba(43, 216, 152, 1);
+    font-size: 15px;
+}
+
+.mine img {
+    vertical-align: middle;
+}
+
+.user {
+    font-size: 18px;
+    top: 7%;
+    right: 33%;
+}
+
+.user img {
+    vertical-align: top;
+}
+
+.comment {
+    font-size: 32px;
+    top: 28%;
+    right: 23%;
+}
+
+.comment img {
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+}
+
+.posted {
+    top: 65%;
+    right: 55%;
+}
+
+.like {
+    top: 65%;
+    right: 14%; 
+}
+
+/*@+图标的初始设置*/
+.icon {
+    background: rgba(155, 160, 215, 1) url(images/atplus_white.png) no-repeat center;
+    -webkit-transition-delay: 0.8s;
+    transition-delay: 0.8s;
+    -moz-background-size: 80%;
+    background-size: 80%;
+    width: 35px;
+    height: 35px;
+}
+
+/*消除无序列表的圆点标志*/
+ul {
+    list-style: none;
+}
+
+/*鼠标处于图标上时各部分的变化*/
+/*@+图标部分*/
+#button:hover .icon {
+    background-image: url(images/atplus_green.png);
+    background-color: rgba(48, 63, 159, 1);
+    transform: scale(1.55, 1.55);
+    -ms-transform: scale(1.55, 1.55);
+    -moz-transform: scale(1.55, 1.55);
+    -webkit-transform: scale(1.55, 1.55);
+    -o-transform: scale(1.55, 1.55);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+/*info部分*/
+#button:hover .info {
+    background-color: rgba(126, 126, 126, 1);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    bottom: 145%;
+    right: -140%;
+    width: 130px;
+    height: 130px;
+}
+
+/*button部分*/
+#button:hover .button {
+    background-color: rgba(104, 104, 104, 1);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    width: 33px;
+    height: 33px;
+}
+
+#button:hover .mask {
+    right: 180%;
+    bottom: 105%;
+}
+
+#button:hover .history {
+    right: 220%;
+    bottom: -5%;
+}
+
+#button:hover .message {
+    right: 175%;
+    bottom: -110%;
+}
+
+#button:hover .unread {
+    background-color: rgba(255, 55, 55, 1);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    width: 18px;
+    height: 18px;
+}
+
+#button:hover .setting {
+    right: 75%;
+    bottom: -180%;
+}
+
+#button:hover .sign {
+    right: -50%;
+    bottom: -170%;
+}

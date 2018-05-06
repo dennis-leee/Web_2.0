@@ -1,0 +1,89 @@
+/*总体*/
+.myGame {
+    font-family: "Century Gothic", Futura, Verdana, sans-serif;
+    text-align: center;
+    position: relative;
+    width: 777px;
+    height: 495px;
+    margin: auto;
+}
+
+/*设置部分*/
+.setting {
+    margin: auto;
+    width: 300px;
+    height: 100px;
+}
+
+#button, #state {
+    float: left;
+}
+
+.time, .score {
+    text-align: right;
+    width: 100px;
+    float: right;
+}
+
+#state, .score {
+    margin-top: 10px;
+}
+
+#time, #score{
+    margin-left: 5px;
+    width: 35px;
+    float: right;
+}
+
+#button {
+    border:1px solid #a8a8a8;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#button:active {
+    background-color: #4285f4;
+}
+
+#state {
+    width: 130px;
+}
+
+/*游戏区域*/
+#game {
+    border-top: 1px solid #a8a8a8;
+    border-bottom: 1px solid #a8a8a8;
+    width: 234px;
+    height: 167px;
+    margin: auto;
+}
+
+/*地鼠与地洞的相关设置*/
+.mole, .hole{
+    border: 1px inset #a8a8a8;
+    float: left;
+    border-radius: 50%;
+    margin: 2px;
+    margin-top: 6px;
+    width: 17px;
+    height: 17px;
+}
+
+.hole:active {
+    border-color: aqua;
+}
+
+.mole {
+    border-style: solid;
+    border-color: #4285f4;
+    border-width: 5px;
+    width: 9px;
+    height: 9px;
+}
+
+/*说明部分*/
+.instructions {
+    text-align: left;
+    padding-left: 50px;
+    margin-top: 30px;
+}

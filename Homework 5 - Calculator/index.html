@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel = "icon" sizes = "196x196" href = "favicon.png" />
+        <link href="index.css" type="text/css" rel="stylesheet" />
+        <script src="index.js" type="text/javascript"></script>
+    </head>
+    
+    <body>
+        <div class="myCalculator">
+            <div class="header">
+                <h1>简单计算器</h1>
+            </div>
+            <div class="main">
+                <div class="output-area">
+                    <input type="text" readOnly="readonly" id="out" />
+                </div>
+                <div class="button-area">
+                    <input type="button" value="7" onclick="getOperate(7)" />
+                    <input type="button" value="8" onclick="getOperate(8)" />
+                    <input type="button" value="9" onclick="getOperate(9)" />
+                    <input type="button" value="/" onclick="getOperate('/')" />
+                    <input type="button" value="4" onclick="getOperate(4)" />
+                    <input type="button" value="5" onclick="getOperate(5)" />
+                    <input type="button" value="6" onclick="getOperate(6)" />
+                    <input type="button" value="*" onclick="getOperate('*')" />
+                    <input type="button" value="1" onclick="getOperate(1)" />
+                    <input type="button" value="2" onclick="getOperate(2)" />
+                    <input type="button" value="3" onclick="getOperate(3)" />
+                    <input type="button" value="-" onclick="getOperate('-')" />
+                    <input type="button" value="0" onclick="getOperate(0)" />
+                    <input type="button" value="." onclick="getOperate('.')" />
+                    <input type="button" value="←" onclick="getOperate('←')" />
+                    <input type="button" value="+" onclick="getOperate('+')" />
+                    <input type="button" value="(" onclick="getOperate('(')" />
+                    <input type="button" value=")" onclick="getOperate(')')" />
+                    <input type="button" value="CE" onclick="getOperate('CE')" />
+                    <input type="button" value="=" onclick="getOperate('=')" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

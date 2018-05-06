@@ -1,0 +1,148 @@
+/*全局*/
+.myMaze {
+    font-family: "Century Gothic", Futura, Verdana, sans-serif;
+    text-align: center;
+    width: 935px;
+    height: 632px;
+    margin: auto;
+}
+
+#result {
+    opacity: 0;
+}
+
+#show_result {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+/*绘制迷宫*/
+.maze {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.wall, .wall_etc {
+    border:1px outset black;
+    background-color: #eeeeee;
+    position: absolute;
+}
+
+.wall:nth-child(1), .wall:nth-child(3){
+    border-bottom-style: none;
+    width: 152px;
+    height: 50px;
+    top: 0;
+}
+
+.wall:nth-child(1) {
+    border-right-style: none;
+    left: 0;
+}
+
+.wall:nth-child(2) {
+    border-left-style: none;
+    border-right-style: none;
+    width: 196px;
+    height: 50px;
+    left: 152px;
+    top: 0;
+}
+
+.wall:nth-child(3) {
+    border-left-style: none;
+    right: 0;
+}
+
+.wall:nth-child(4), .wall:nth-child(5) {
+    border-top-style: none;
+    width: 150px;
+    height: 150px;
+    top: 51px;
+}
+
+.wall:nth-child(4) {
+    left: 0;
+}
+
+.wall:nth-child(5) {
+    right: 0;
+}
+
+.wall:nth-child(6), .wall:nth-child(9){
+    width: 200px;
+    height: 48px;
+}
+
+.wall:nth-child(6) {
+    border-right-style: none;
+    left: 0;
+    bottom: 0;
+}
+
+.wall:nth-child(7) {
+    border-bottom-style: none;
+    width: 98px;
+    height: 150px;
+    left: 200px;
+    bottom: 48px;
+}
+
+.wall:nth-child(8) {
+    border-style: none;
+    border-bottom-style: solid;
+    width: 100px;
+    height: 48px;
+    left: 200px;
+    bottom: 0;
+}
+
+.wall:nth-child(9) {
+    border-left-style: none;
+    right: 0;
+    bottom: 0;
+}
+
+/*开始和结束方块的设置*/
+#start, #end {
+    border: 1px inset black;
+    position: absolute;
+    bottom: 53px;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+#start {
+    background-color: #84ff82;
+    left: 0;
+}
+
+#end {
+    background-color: #8685fd;
+    right: 0;
+}
+
+/*注意事项区域的设置*/
+.notice {
+    text-align:left;
+    width: 600px;
+    margin: auto;
+}
+
+/*墙体示例*/
+.wall_etc {
+    position: static;
+    width: 103px;
+    height: 26px;
+    margin: auto;
+}
+
+/*碰墙后的变化*/
+.lose {
+    background-color: red;
+}

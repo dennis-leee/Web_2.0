@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Whac-a-mole</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="mole.png" rel="icon" sizes = "196x196" />
+        <link href="whac-a-mole.css" type="text/css" rel="stylesheet" />
+        <script src="JS/jquery.js" type="text/javascript"></script>
+        <script src="JS/lodash.js" type="text/javascript"></script>
+        <script src="JS/whac-a-mole.js" type="text/javascript"></script>
+    </head>
+        
+    <body>
+        <div class="myGame">
+            <div class="header">
+                <h1>Whac-a-mole</h1>
+            </div>
+            
+            <div class="main">
+                <p>Test tour skill. How many boxes(moles) can you check(hit) in 30 seconds?</p>
+                <!--设置及显示部分-->
+                <div class="setting">
+                    <input type="button" value="Start Game | Stop Game" id ="startOrStop" />
+                    
+                    <span class="time">Time: <input type="text" readOnly="readonly" value="0" id="time" /></span>
+                    
+                    <input type="text" readOnly="readonly" value="Welcome" id="state" />
+
+                    <span class="score">Score: <input type="text" readOnly="readonly" value="0" id="score" /></span>
+                </div>
+                <!--游戏区域-->
+                <div id="game"></div>
+                <!--说明部分-->
+                <div class="instructions">
+                    <b>Instructions:</b>
+                    <ol>
+                        <li>Click on the radio buttons(moles) as they are selected randomly by the computer.</li>
+                        <li>1 point per hit, minus 1 point per miss.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

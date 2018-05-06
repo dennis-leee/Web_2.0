@@ -1,0 +1,179 @@
+/*字体*/
+html, body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+/*按钮的相关处理*/
+#button {
+    position: absolute;
+    bottom: 10%;
+    right: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width:35px;
+    height: 35px;
+}
+
+.apb {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
+#sum, button {
+    position: absolute;
+    bottom: 35%;
+    right: 35%;
+}
+
+#sum, button, .icon, .num {
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+#sum {
+    text-align: center;
+    overflow: hidden;
+}
+
+button {
+    border: 1px solid dimgray;
+    color: #2bd898;
+}
+
+.result {
+    font-size: 50px;
+}
+
+.queue {
+    position: relative;
+    top: -185px;
+    left: -40px;
+}
+
+.message {
+    position: relative;
+    top: -185px;
+    left: -40px;
+}
+
+.bt_name {
+    position: absolute;
+    left: 22%;
+    top: 8%;
+}
+
+/*获取的随机数部分的相关设置*/
+.num {
+    font-family: "Arial Black", sans-serif;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    position: absolute;
+    right: -27%;
+    bottom: 55%;
+    color: white;
+}
+
+/*info中的细节处理*/
+#sum {
+    font-weight: bold;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+/*@+图标的初始设置*/
+.icon {
+    background: rgba(155, 160, 215, 1) url(images/atplus_white.png) no-repeat center;
+    -webkit-transition-delay: 0.8s;
+    transition-delay: 0.8s;
+    -moz-background-size: 80%;
+    background-size: 80%;
+    width: 35px;
+    height: 35px;
+}
+
+/*鼠标处于图标上时各部分的变化*/
+/*@+图标部分*/
+#button:hover .icon {
+    background-image: url(images/atplus_green.png);
+    background-color: rgba(48, 63, 159, 1);
+    transform: scale(1.55, 1.55);
+    -ms-transform: scale(1.55, 1.55);
+    -moz-transform: scale(1.55, 1.55);
+    -webkit-transform: scale(1.55, 1.55);
+    -o-transform: scale(1.55, 1.55);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+
+/*info部分*/
+#button:hover #sum {
+    background-color: rgba(48, 63, 159, 1);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    bottom: 145%;
+    right: -140%;
+    width: 130px;
+    height: 130px;
+}
+
+
+/*button部分*/
+#button:hover button {
+    background-color: rgba(48, 63, 159, 1);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    font-size: 25px;
+    width: 33px;
+    height: 33px;
+}
+
+#button:hover #A {
+    right: 180%;
+    bottom: 105%;
+}
+
+#button:hover #B {
+    right: 220%;
+    bottom: -5%;
+}
+
+#button:hover #C {
+    right: 175%;
+    bottom: -110%;
+}
+
+#button:hover #D {
+    right: 75%;
+    bottom: -180%;
+}
+
+#button:hover #E {
+    right: -50%;
+    bottom: -170%;
+}
+
+#button:hover .num {
+    background-color: rgba(255, 55, 55, 1);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    width: 18px;
+    height: 18px;
+}
